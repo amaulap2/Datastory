@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <style>
+    /* CSS Highlight Animation */
+    @keyframes underlineHighlight  {
+      0% {
+        text-decoration: underline;
+        color: red;
+      }
+      100% {
+        text-decoration: none;
+        color: initial;
+      }
+    }
+
+    /* Class that triggers the animation */
+    .highlight-flash {
+      animation: underlineHighlight  5s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <div id="summary" class="sidebar">
+
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        {% include header.html %}
+        <main class="content {{ page.class | default: 'default-class' }}">
+          {{ content }}
+        </main>
+        {% include footer.html %}
+      </div>
+    </div>
+
+    <script src="{{ 'js/sidebar.js' | relative_url }}"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a[href^='#']"); // Links pointing to sections
+  
+        links.forEach(link => {
+          link.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href").substring(1); // Get the target id (remove #)
+            const targetElement = document.getElementById(targetId);
+  
+            if (targetElement) {
+              // Remove any existing highlights
+              targetElement.classList.remove("highlight-flash");
+              void targetElement.offsetWidth; // Force reflow to restart the animation
+  
+              // Add the highlight class
+              targetElement.classList.add("highlight-flash");
+            }
+          });
+        });
+      });
+    </script>
+</body>
+</html>
