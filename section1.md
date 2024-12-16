@@ -53,7 +53,7 @@ Lastly never. NEVER touch to anything in /_site. This is a folder created automa
 ## Local GIF
 
 <video width="320" height="240" controls>
-  <source src="../../assets/data/gif_matrix.mp4" type="video/mp4">
+  <source src="{ site.baseurl }}/assets/data/gif_matrix.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
