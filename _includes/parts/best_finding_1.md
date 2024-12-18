@@ -9,7 +9,7 @@ In this section we will analyze the behavior of these bots and how they affect t
 To answer this question, we first need to understand how bots are distributed across different categories of videos. We can do this by looking at the proportion of comments made by bots in each category over time.
 
 <figure>
-  <img src="/assets/data/type-1_analysis/prop_comments_per_category_normal.svg" alt="Local Image">
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_comments_per_category_normal.svg" alt="Local Image">
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
@@ -22,7 +22,7 @@ To answer this question, we first need to understand how bots are distributed ac
 In Figure 1, we first show the proportion of comments per category over time for normal users (i.e. users not considered as having suspicious activities). We observe the emergence and decrease in interest in some categories. The most obvious one is the great increase in interest in *Gaming* especially since 2010. This is followed by a decrease in interest in *Music* and *Entertainment* categories.
 
 <figure>
-  <img src="/assets/data/type-1_analysis/prop_comments_per_category_sus.svg" alt="Local Image">
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_comments_per_category_sus.svg" alt="Local Image">
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
