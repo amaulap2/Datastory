@@ -25,8 +25,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Cover the entire header */
-        z-index: -1; /* Place video behind text */
+        object-fit: cover;
+        z-index: -1;
       }
 
       header h1 {
@@ -40,8 +40,8 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        display: flex; /* Make list items horizontal */
-        gap: 20px; /* Add spacing between items */
+        display: flex;
+        gap: 20px;
       }
       nav a {
         color: white;
@@ -52,13 +52,7 @@
         color: lightblue;
       }
 
-      @media (max-width: 768px) {
-        header h1 {
-          font-size: 2em;
-        }
-      }
-
-      /* Body Content Styles (modified) */
+      /* Body Content Styles */
       body {
         font-family: "Roboto", verdana;
         line-height: 1.6;
@@ -68,11 +62,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        text-align: justify; /* Add this line */
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        -ms-hyphens: auto;
-        hyphens: auto;
+        text-align: justify;
       }
 
       .container {
@@ -114,35 +104,182 @@
       }
 
       .light-title {
-        font-weight: lighter; /* Or a specific lighter font-weight like 300 or 400 */
+        font-weight: lighter;
       }
 
-    @keyframes backgroundHighlight {
-      0% { background-color: rgba(255, 255, 0, 0.3); }
-      100% { background-color: transparent; }
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 0px 0;
-      margin-top: 0px;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <video autoplay muted loop playsinline>
-      <source src="{{ "/assets/data/gif_matrix.mp4" | relative_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <h1>
-      <span class="bold-title">Invisible Influencers</span><br>
-      <span class="light-title">Investigating YouTube’s Bot Phenomenon</span>
-    </h1>
+      @keyframes backgroundHighlight {
+        0% {
+          background-color: rgba(255, 255, 0, 0.3);
+        }
+        100% {
+          background-color: transparent;
+        }
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0px 0;
+        margin-top: 0px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Sidebar Button (starts as a small button) */
+      .sidebar-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 15;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+      }
+
+      .sidebar-button:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      /* Sidebar Styles */
+      .sidebar {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 15;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+        display: none; /* Initially hide the sidebar */
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px 0;
+        transition: color 0.3s, background-color 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #00bcd4;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+      }
+
+      .sidebar a.active {
+        color: #ff9800;
+        font-weight: bold;
+      }
+
+      .sidebar li {
+        margin-bottom: 15px;
+      }
+
+      /* Full-screen content adjustment */
+      body.sidebar-expanded .sidebar-button {
+        transform: scale(1); /* Expand the button horizontally */
+        border-radius: 8px; /* Change to rectangular */
+        width: 250px; /* Full width of sidebar */
+        height: 100vh;
+        visibility: visible; /* Keep the button visible during expansion */
+        opacity: 0;
+      }
+
+      body.sidebar-expanded .sidebar {
+        display: block;
+        width: 250px;
+        height: calc(100vh - 40px);
+        border-radius: 10px;
+        transition: all 0.5s ease;
+        font-size: 1em; /* Adjust the font size as needed */
+        overflow-y: auto; /* Add vertical scroll */
+        scrollbar-width: thin; /* Firefox */
+        scrollbar-color: #888 #333; /* Firefox */
+      }
+      
+      /* Base styles for the sidebar */
+#summary {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  background-color: #333; /* Adjust the background color as needed */
+  padding: 20px;
+  font-size: 0.8em; /* Default font size for the summary container */
+}
+
+/* Style for the TOC list */
+#summary ul {
+  padding-left: 20px; /* Indentation for the first level */
+  list-style-type: none; /* Removes default bullets */
+  margin-left: 0;
+}
+
+/* Style for TOC list items */
+#summary li {
+  margin: 5px 0;  /* Adds space between items */
+}
+
+#summary a {
+  text-decoration: none;  /* Removes underline */
+  color: white; /* Adjust color for links */
+}
+
+/* Hover effect for links */
+#summary a:hover {
+  color: #00bcd4;  /* Change to any hover color */
+}
+
+/* Add specific styles for heading levels */
+
+
+/* Style for nested lists (sub-sections like h3 under h2) */
+#summary li ul {
+  padding-left: 20px; /* Add padding for nested sub-lists */
+  list-style-type: none;
+}
+
+
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          left: 0;
+          border-radius: 0;
+        }
+
+        .sidebar-button {
+          font-size: 30px; /* Increase size on smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <video autoplay muted loop playsinline>
+        <source src="{{ '/assets/data/gif_matrix.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h1>
+        <span class="bold-title">Invisible Influencers</span><br />
+        <span class="light-title">Investigating YouTube’s Bot Phenomenon</span>
+      </h1>
 
       <nav>
         {%- if site.navigation -%}
@@ -154,6 +291,15 @@
         {%- endif -%}
       </nav>
     </header>
+
+    <!-- Sidebar Button (will transform into sidebar when clicked) -->
+    <div class="sidebar-button" onclick="toggleSidebar()">☰</div>
+
+    <!-- Sidebar (starts as hidden) -->
+    <div class="sidebar" id="summary">
+
+    </div>
+
     <div class="container">
       <main class="content {{ page.class | default: 'default-class' }}">
         {{ content }}
@@ -161,5 +307,23 @@
     </div>
 
     {% include footer.html %}
-  </body>
+
+    <script>
+      function toggleSidebar() {
+        document.body.classList.toggle('sidebar-expanded');
+      }
+
+      // Close the sidebar when clicking outside of it
+      document.addEventListener('click', function (e) {
+        const sidebar = document.getElementById('summary');
+        const sidebarButton = document.querySelector('.sidebar-button');
+
+        if (!sidebar.contains(e.target) && !sidebarButton.contains(e.target)) {
+          // If the click was outside the sidebar and button, close the sidebar
+          document.body.classList.remove('sidebar-expanded');
+        }
+      });
+    </script>
+<script src="{{ '/js/sidebar.js' | relative_url }}"></script>
+</body>
 </html>
