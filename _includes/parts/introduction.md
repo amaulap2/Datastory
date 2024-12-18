@@ -32,13 +32,87 @@ The violin graph shows the distribution of videos commented on per day by normal
 ## Intersection
 
 
-
-$$
-\left\{\begin{aligned} &T_{1,2} = T_1 \cap T_2 \\
-& \overline{T}_1 = T_1 \backslash T_{1,2} \\
-& \overline{T}_2 = T_2 \backslash T_{1,2}
-\end{aligned}\right.
-$$
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mo fence="true" form="prefix">{</mo>
+    <mtable displaystyle="true" columnalign="right left">
+      <mtr>
+        <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
+          <mrow></mrow>
+        </mtd>
+        <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
+          <mrow>
+            <msub>
+              <mi>T</mi>
+              <mn>1,2</mn>
+            </msub>
+            <mo>=</mo>
+            <msub>
+              <mi>T</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>∩</mo>
+            <msub>
+              <mi>T</mi>
+              <mn>2</mn>
+            </msub>
+          </mrow>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
+          <mrow></mrow>
+        </mtd>
+        <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
+          <mrow>
+            <msub>
+              <menclose notation="top" class="tml-overline">
+                <mi>T</mi>
+              </menclose>
+              <mn>1</mn>
+            </msub>
+            <mo>=</mo>
+            <msub>
+              <mi>T</mi>
+              <mn>1</mn>
+            </msub>
+            <mi>\</mi>
+            <msub>
+              <mi>T</mi>
+              <mn>1,2</mn>
+            </msub>
+          </mrow>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd class="tml-right" style="padding:0.7ex 0em 0.7ex 0em;">
+          <mrow></mrow>
+        </mtd>
+        <mtd class="tml-left" style="padding:0.7ex 0em 0.7ex 0em;">
+          <mrow>
+            <msub>
+              <menclose notation="top" class="tml-overline">
+                <mi>T</mi>
+              </menclose>
+              <mn>2</mn>
+            </msub>
+            <mo>=</mo>
+            <msub>
+              <mi>T</mi>
+              <mn>2</mn>
+            </msub>
+            <mi>\</mi>
+            <msub>
+              <mi>T</mi>
+              <mn>1,2</mn>
+            </msub>
+          </mrow>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo fence="true" form="postfix"></mo>
+  </mrow>
+</math>
 
 
 <div style="text-align: center;">
