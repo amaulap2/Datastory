@@ -120,7 +120,7 @@ We created a stacked area plot of the different groups. The intersection represe
 <div style="text-align: center;">
 <figure>
   <img src="{{ site.baseurl }}/assets/data/introduction/different_types_of_bots.svg" alt="Stacked area" class='center'
-  width="1100px">
+  width="1000px">
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
