@@ -1,67 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <style>
-    /* CSS Highlight Animation */
-    @keyframes underlineHighlight  {
-      0% {
-        text-decoration: underline;
-        color: red;
-      }
-      100% {
+    /* Header Styles */
+    header {
+      position: relative;
+      overflow: hidden;
+      height: 25vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cover the entire header */
+      z-index: -1; /* Place video behind text */
+    }
+
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 20px;
+      font-family: 'Roboto Mono', monospace;
+      text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Make list items horizontal */
+        gap: 20px; /* Add spacing between items */
+    }
+    nav a {
+        color: white;
         text-decoration: none;
-        color: initial;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: lightblue;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
       }
     }
 
-    /* Class that triggers the animation */
+    /* Body Content Styles (modified) */
+    body {
+      font-family: 'Roboto', verdana;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f8f8;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: justify; /* Add this line */
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0px auto;
+      padding: 0 0px;
+      flex: 1;
+    }
+
+    .main-content {
+      margin-top: 20px;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
     .highlight-flash {
-      animation: underlineHighlight  5s ease-out;
+      animation: backgroundHighlight 2s ease-out;
+    }
+
+    .bold-title {
+      font-weight: bold;
+    }
+
+    .light-title {
+      font-weight: lighter; /* Or a specific lighter font-weight like 300 or 400 */
+    }
+
+    @keyframes backgroundHighlight {
+      0% { background-color: rgba(255, 255, 0, 0.3); }
+      100% { background-color: transparent; }
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 0px 0;
+      margin-top: 0px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="{{ "/assets/data/gif_matrix.mp4" | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>
+      <span class="bold-title">Invisible Influencers</span><br>
+      <span class="light-title">Investigating YouTube’s Bot Phenomenon</span>
+    </h1>
 
-    <div class="container">
-      <!-- Sidebar -->
-      <div id="summary" class="sidebar">
+    <nav>
+      {%- if site.navigation -%}
+        <ul>
+          {%- for item in site.navigation -%}
+            <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </nav>
 
-      </div>
-      <!-- Main Content -->
-      <div class="main-content">
-        {% include header.html %}
-        <main class="content {{ page.class | default: 'default-class' }}">
-          {{ content }}
-        </main>
-        {% include footer.html %}
-      </div>
-    </div>
+  </header>
+  <div class="container">
+    <main class="content {{ page.class | default: 'default-class' }}">
+      {{ content }}
+    </main>
+  </div>
 
-    <script src="{{ 'js/sidebar.js' | relative_url }}"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll("a[href^='#']"); // Links pointing to sections
+  {% include footer.html %}
   
-        links.forEach(link => {
-          link.addEventListener("click", function (e) {
-            const targetId = this.getAttribute("href").substring(1); // Get the target id (remove #)
-            const targetElement = document.getElementById(targetId);
-  
-            if (targetElement) {
-              // Remove any existing highlights
-              targetElement.classList.remove("highlight-flash");
-              void targetElement.offsetWidth; // Force reflow to restart the animation
-  
-              // Add the highlight class
-              targetElement.classList.add("highlight-flash");
-            }
-          });
-        });
-      });
-    </script>
 </body>
 </html>
