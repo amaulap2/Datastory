@@ -20,7 +20,7 @@ For Type-1 behavior, the average number of comments per video is around 1.5, wit
   </div>
 </div>
 
-# Can We Reliably Detect Bots?
+## Can We Reliably Detect Bots?
 What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
 
 <div style="text-align: center;">
