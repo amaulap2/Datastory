@@ -3,7 +3,7 @@ You’ve probably noticed some odd stuff on YouTube — videos filled with spam 
 
 This project aims to explore the growing bot problem on YouTube. With over 136,000 channels and 73 million videos in our dataset, we’re looking at how bots influence engagement metrics like views, likes, and comments. Our main goal is to identify bots based on their commenting patterns, specifically targeting videos uploaded within similar timeframes. We want to understand how these bots affect both the videos and channels they target, uncovering trends in content and engagement.
 
-# Characterizing YouTube bots
+# Characterizing YouTube Bots
 YouTube bots generally show two kinds of behavior:
 - Type-1: Posting a lot of comments under the same video.
 - Type-2: Posting comments on a large number of different videos in a short time.
@@ -20,7 +20,7 @@ For Type-1 behavior, the average number of comments per video is around 1.5, wit
   </div>
 </div>
 
-# Can we reliably detect these bots?
+# Can We Reliably Detect Bots?
 What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
 
 <div style="text-align: center;">
