@@ -19,6 +19,11 @@ title: Home
 {% endcapture %}
 {{ markdown_content | strip | markdownify }}
 
+{% capture markdown_content %}
+    {% include parts/bot_ranking.md %}
+{% endcapture %}
+{{ markdown_content | strip | markdownify }}
+
 
 
 
