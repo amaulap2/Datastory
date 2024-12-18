@@ -1,12 +1,13 @@
 # Type-2 Bot Analysis
 
-### Is there a correlation between the number of days os suspicious activity and the lifetime of an account ?
+### Is there a correlation between the number of days of suspicious activity and the lifetime of an account?
 
-First, it is important to define what do we call lifetime. And we'll see that the definition is important and gives different insights.
+First, it’s important to define what we mean by *lifetime*. The definition we choose plays a crucial role, as it can provide us with different insights into user behavior.
 
 ## 1. Lifetime of Bots
 
-We explored the **lifetime of bots** using three different calculations to understand their activity duration and derive meaningful insights about their behavior. Below is an explanation of each approach.
+We explored the **lifetime of bots** using three different calculations to understand how long they are active and to derive meaningful insights about their behavior. Below is an explanation of each approach.
+
 
 ### 1.1 First day of commenting – Last day of commenting
 - **Definition**: The time between the very first day a bot left a comment (whether suspicious or not) and the last day it left a comment.
@@ -45,26 +46,40 @@ We explored the **lifetime of bots** using three different calculations to under
 </div>
 
 
-<p>It is evident that the first definition does not provide clear insights. Looking at the <a href="#lifetime_1">violin plot 1</a>, it is not possible to distinguish between normal users and suspicious ones, as both distributions appear the same. On the other hand, the <a href="#lifetime_2">plot</a> for the second definition shows a noticeable shift, where suspicious users have significantly shorter lifetimes. Finally, a more balanced <a href="#lifetime_3">plot</a> reveals that most suspicious accounts stop commenting after their first suspicious activity, although some accounts can remain active for up to 4000 or 5000 days. This could be explained by accounts being hacked to use bots, then later reclaimed by the original users, continuing to behave like normal users.</p>
+<p>At first glance, the <a href="#lifetime_1">violin plot 1</a> doesn’t give us much to work with. It’s hard to tell normal users apart from suspicious ones because their distributions look almost identical. But when we move to the <a href="#lifetime_2">plot</a> for the second definition, things start to shift. Suspicious users clearly have much shorter lifetimes, which aligns with what we’d expect — bot accounts usually don’t stick around for long. This doesn’t give us a definitive answer, but it hints at possible reasons, like YouTube’s algorithm catching them quickly or bots being deployed for short-term campaigns. Finally, the <a href="#lifetime_3">plot</a> strikes a better balance, showing that most suspicious accounts stop commenting right after their first suspicious activity. Interestingly, some accounts live on for 4000 or even 5000 days. This could be because the accounts were hacked to operate as bots and then reclaimed by their original owners, going back to behaving like normal users.</p>
+
+Now that we'v eclearly defined different lifetime. Let's look at our question previous question : 
+
+### Is there a correlation between the number of days of suspicious activity and the lifetime of an account?
 
 
-
-<div style="text-align: center;" id="lifetime_3">
+<div style="text-align: center;" id="correlation_1">
   <img src="{{ site.baseurl }}/assets/data/best_finding_2/correlation_1.png" alt="Local Image">
-  <p>Violinplot for definition 3.</p>
+  <p>Correlation with first definition.</p>
 </div>
 
-<div style="text-align: center;" id="lifetime_3">
+With the first definition, we can see on the <a href="#correlation_1">correlation graph</a> that there is no clear correlation. Moreover the Pearson coefficient is about 0.07 and Spearman about 0.14. Therefore, it’s safe to say that this first definition doesn’t provide any useful insights or meaningful information.
+
+
+<div style="text-align: center;" id="correlation_2">
   <img src="{{ site.baseurl }}/assets/data/best_finding_2/correlation_2.png" alt="Local Image">
-  <p>Violinplot for definition 3.</p>
+  <p>Correlation with second definition.</p>
 </div>
 
-<div style="text-align: center;" id="lifetime_3">
+Next, with a Pearson correlation of 0.35 and a Spearman correlation of 0.92, combined with what we observe on the <a href="#correlation_2">correlation graph</a>, we can clearly conclude that there is a correlation between the active days and lifetime. If we recall, lifetime here is defined as the number of days between the first and last days of suspicious activity.This finding is highly likely to be indicative of bot-like behavior. It suggests that the longer the lifetime of an account, the more suspicious days it accumulates, implying a consistent pattern of suspicious activity. On the other hand, a shorter lifetime could indicate strategic bot usage, possibly targeting a specific event or time period, which aligns with the behavior of bots designed for short-term, focused activities.
+
+
+<div style="text-align: center;" id="correlation_3">
   <img src="{{ site.baseurl }}/assets/data/best_finding_2/correlation_3.png" alt="Local Image">
-  <p>Violinplot for definition 3.</p>
+  <p>Correlation with third definition</p>
 </div>
 
-<div style="text-align: center;" id="lifetime_3">
+Here the third <a href="#correlation_3">correlation graph</a> doesn't seem to give that much information moreover the Pearson and Spearman coefficient are relatively small. Nothing seems to emerge from here...
+
+<div style="text-align: center;" id="correlation_4">
   <img src="{{ site.baseurl }}/assets/data/best_finding_2/correlation_4.png" alt="Local Image">
-  <p>Violinplot for definition 3.</p>
+  <p>Correlation with number of videos commented</p>
 </div>
+
+
+Lastly, the <a href="#correlation_4">correlation plot</a> reveals that the more suspicious days an account has, the more videos it has commented on. This is quite intuitive and aligns with our expectations. In fact, one might have expected an even stronger correlation between these two variables. However, this relatively moderate correlation suggests that some accounts can comment on a large number of videos within a short time frame, without needing to spread their activity over multiple days. This points to the possibility that the relationship between suspicious days and commenting activity may not be as tightly linked as initially assumed.
