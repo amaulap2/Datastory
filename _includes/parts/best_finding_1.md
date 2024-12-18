@@ -45,7 +45,7 @@ Another interesting question to ask is whether bots target specific channels, me
 
 <div style="text-align: center;">
 <figure>
-  <img src="{ site.baseurl }}/assets/data/type-1_analysis/prop_normal_per_channels.svg" alt="Local Image" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_normal_per_channels.svg" alt="Local Image" class='center'>
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
@@ -60,7 +60,7 @@ In Figure 3, we show the proportion of normal users commenting on 1, 2, 3, 4 and
 
 <div style="text-align: center;">
 <figure>
-  <img src="{ site.baseurl }}/assets/data/type-1_analysis/prop_sus_per_channels.svg" alt="Local Image" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_sus_per_channels.svg" alt="Local Image" class='center'>
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
@@ -79,7 +79,7 @@ Finally, we want to understand how bots affect the engagement metrics of a video
 
 <div style="text-align: center;">
 <figure>
-  <img src="{ site.baseurl }}/assets/data/type-1_analysis/normalized_metrics.svg" alt="Local Image" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/normalized_metrics.svg" alt="Local Image" class='center'>
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
@@ -94,7 +94,7 @@ As expected and as can be seen on Figure 5, we see that the engagement metrics g
 
 <div style="text-align: center;">
 <figure>
-  <img src="{ site.baseurl }}/assets/data/type-1_analysis/normalized_metrics_sus.svg" alt="Local Image" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/normalized_metrics_sus.svg" alt="Local Image" class='center'>
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
@@ -109,7 +109,7 @@ On Figure 6, we see that *Total Likes, Comments, Replies and Videos* follow the 
 
 <div style="text-align: center;">
 <figure>
-  <img src="{ site.baseurl }}/assets/data/type-1_analysis/corr_map_evol_normal_sus_T1.svg" alt="Local Image" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/corr_map_evol_normal_sus_T1.svg" alt="Local Image" class='center'>
   <center>
   <figcaption>
   <p style="margin-top:-0.2cm;margin-left:0.2cm;">
