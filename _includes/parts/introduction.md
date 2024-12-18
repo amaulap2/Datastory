@@ -29,3 +29,27 @@ What's interesting is that most suspicious users show both types of behaviors at
 
 The violin graph shows the distribution of videos commented on per day by normal and suspicious users. It helps compare how the two categories stack up and reveals that "suspicious" users tend to comment more often. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30).
 
+## Intersection
+
+
+
+$$
+\left\{\begin{aligned} &T_{1,2} = T_1 \cap T_2 \\
+& \overline{T}_1 = T_1 \backslash T_{1,2} \\
+& \overline{T}_2 = T_2 \backslash T_{1,2}
+\end{aligned}\right.
+$$
+
+
+<div style="text-align: center;">
+<figure>
+  <img src="{{ site.baseurl }}/assets/data/introduction/different_types_of_bots.svg" alt="Stacked area" class='center'>
+  <center>
+  <figcaption>
+  <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+    <font size=2> Stacked area plot of the evolution of the different type of bots.</font>
+  </p>
+  </figcaption>
+  </center>
+</figure>
+</div>
