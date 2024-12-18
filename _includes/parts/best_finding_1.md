@@ -23,6 +23,7 @@ To answer this question, we first need to understand how bots are distributed ac
 
 In Figure 1, we first show the proportion of comments per category over time for normal users (i.e. users not considered as having suspicious activities). We observe the emergence and decrease in interest in some categories. The most obvious one is the great increase in interest in *Gaming* especially since 2010. This is followed by a decrease in interest in *Music* and *Entertainment* categories.
 
+<div style="text-align: center;">
 <figure>
   <img src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_comments_per_category_sus.svg" alt="Local Image" class='center'>
   <center>
@@ -33,5 +34,6 @@ In Figure 1, we first show the proportion of comments per category over time for
   </figcaption>
   </center>
 </figure>
+</div>
 
 In Figure 2, we show the proportion of comments per category over time for suspicious users. We see that the proportion of comments per category tend to follow the same trend as normal users. Which makes sense since we could assume that bots would target the same categories as normal users. However we note that some categories attract more bots than normal users. For example, the *Howto & Style* category has a much higher proportion of comments from bots than it did for normal users.
