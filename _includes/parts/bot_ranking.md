@@ -30,8 +30,10 @@ Agent Smith clearly played with YT bot detection algorithm, he produced 154 765 
   <img src="{{ site.baseurl }}/assets/data/bot_ranking/HAL_stats.svg" alt="Local Image">
   <p>Violinplot for definition 1.</p>
 </div>
+
 HAL really wants to know about everything! 
  Great effort from the bad guy from 2001 the space Odysse. Kubrick could be proud of it's creation !
+
 
 
 <div style="text-align: center;" id="lifetime_1">
