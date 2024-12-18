@@ -14,7 +14,7 @@ Here are the abbreviations and descriptions of the different attributes we use t
 - **TLC (Total Lifetime Comments):** Total number of comments during the bot's lifetime.  
 - **MVD (Maximum Videos Commented in a Day):** Maximum number of different videos commented on in a single day.  
 - **MVT (Maximum Videos Commented in Total):** Maximum number of different videos commented on across the bot's lifetime.  
-- **NSD (Number of Suspicious Days):** Maximum suspicious days detected (maximum between the numbe rof suspicious days detected by Filter 1 and Filter 2).
+- **NSD (Number of Suspicious Days):** Maximum suspicious days detected (between the number of suspicious days detected by Filter 1 and Filter 2).
 
 
 
@@ -28,8 +28,6 @@ Here are the abbreviations and descriptions of the different attributes we use t
 **HAL 9000** is undoubtedly the **most curious bot**, having commented on over **352,020 different videos**!  
 
 A remarkable effort from the villain of *2001: A Space Odyssey*. **Kubrick** would surely be proud of this relentless digital creation!
-
-
 
 
 
@@ -56,3 +54,14 @@ With so few comments, it’s entirely possible that **C-3PO** was not a bot at a
 As expected, the **T-800** doesn't do things by halves. A true over-the-top performer, **he went all in** and left no room for subtlety.  
 
 The Terminator, famously portrayed by **Arnold Schwarzenegger**, posted an unbelievable **30,990 comments in a single day**! Then, just as dramatically, he almost stopped all activity. A classic example of brute force!
+
+## 🏆 **4. Award for the Most Suspicious Days Without Being Banned**
+
+<div style="text-align: center;" id="lifetime_1">
+  <img src="{{ site.baseurl }}/assets/data/bot_ranking/SMITH_stats.svg" alt="Agent Smith Statistics">
+  <p><strong>Agent Smith Statistics</strong></p>
+</div>
+
+**Agent Smith** clearly outsmarted YouTube's bot detection algorithm. He produced an astonishing **154,765 comments** during his time and was detected on **2,907 different days** using our filters!  
+
+His human-like behavior, beside once when he posted **1387 comments in a day** allowed him to remain undetected and unbanned for so long. Agent Smith is truly the **GOAT** of stealth and persistence.
