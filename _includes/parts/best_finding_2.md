@@ -1,5 +1,4 @@
 # Type-2 Bot Analysis
-# Best finding 2
 
 ### Is there a correlation between the number of days os suspicious activity and the lifetime of an account ?
 

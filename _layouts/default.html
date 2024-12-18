@@ -117,33 +117,32 @@
         font-weight: lighter; /* Or a specific lighter font-weight like 300 or 400 */
       }
 
-      @keyframes backgroundHighlight {
-        0% {
-          background-color: rgba(255, 255, 0, 0.3);
-        }
-        100% {
-          background-color: transparent;
-        }
-      }
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 0px 0;
-        margin-top: 0px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <video autoplay muted loop playsinline>
-        <source src="{{ "/assets/data/gif_matrix.mp4" | relative_url }}"
-        type="video/mp4"> Your browser does not support the video tag.
-      </video>
-      <h1>
-        <span class="bold-title">Invisible Influencers</span><br />
-        <span class="light-title">Investigating YouTube’s Bot Phenomenon</span>
-      </h1>
+    @keyframes backgroundHighlight {
+      0% { background-color: rgba(255, 255, 0, 0.3); }
+      100% { background-color: transparent; }
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 0px 0;
+      margin-top: 0px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="{{ "/assets/data/gif_matrix.mp4" | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>
+      <span class="bold-title">Invisible Influencers</span><br>
+      <span class="light-title">Investigating YouTube’s Bot Phenomenon</span>
+    </h1>
 
       <nav>
         {%- if site.navigation -%}
