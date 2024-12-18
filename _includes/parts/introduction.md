@@ -31,6 +31,7 @@ The violin graph shows the distribution of videos commented on per day by normal
 
 ## Intersection
 
+Let's study the link between the different type of bots. Let <math> <msub><mi>T</mi><mn>1</mn></msub></math> be the dataset of bots of type 1 and <math> <msub><mi>T</mi><mn>2</mn></msub></math> the dataset of bots of type 2. We define the following quantities :
 
 <math display="block" class="tml-display" style="display:block math;">
   <mrow>
@@ -114,10 +115,12 @@ The violin graph shows the distribution of videos commented on per day by normal
   </mrow>
 </math>
 
+We created a stacked area plot of the different groups. The intersection represents a big part of the datasets.
 
 <div style="text-align: center;">
 <figure>
-  <img src="{{ site.baseurl }}/assets/data/introduction/different_types_of_bots.svg" alt="Stacked area" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/introduction/different_types_of_bots.svg" alt="Stacked area" class='center'
+  width="400px">
   <center>
   <figcaption>
   <p style="margin-top:-0.6cm;margin-left:0.2cm;">
