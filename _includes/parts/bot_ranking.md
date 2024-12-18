@@ -1,4 +1,4 @@
-### Bots Awards 
+# Bots Awards 
 
 We learned more about bots' characteristics, behaviors, and the metrics we used to identify them.  
 
