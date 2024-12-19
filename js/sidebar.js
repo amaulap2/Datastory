@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const titles = document.querySelectorAll("h1");
   
     sidebar.innerHTML = '';  // Clear existing content
-  
+
     titles.forEach(title => {
       const link = document.createElement("a");
       link.href = `#${title.id}`;
@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
       sidebar.appendChild(link);
     });
   });
-
 
 // All method
 
