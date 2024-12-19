@@ -232,7 +232,7 @@ On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies 
 
 <div style="text-align: center;" id="Figure7">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/corr_map_evol_normal_sus_T1.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/heatmap_norm_sus.html" 
           width="100%" 
           height="500" 
           style="border:none;">
@@ -240,7 +240,7 @@ On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies 
   <center>
   <figcaption>
     <p style="margin-top:-0.6cm;margin-left:0.2cm;">
-      <font size="2">Figure 6: Normalized Metrics for Suspicious Users.</font>
+      <font size="2">Figure 7: Correlation Matrix of Normalized Metrics for Normal vs Suspicious Users.</font>
     </p>
   </figcaption>
   </center>
@@ -248,4 +248,4 @@ On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies 
 </div>
 
 
-Finally, on Figure 7, we show the correlation matrix of the normalized metrics for normal and suspicious users. We see that the metrics are highly correlated for both normal and suspicious users. This high correlation suggests that YouTube anti-bots algorithms were not able to detect the bots and remove them from the platform since the bots interactions have increased in the same way as normal users interactions. This is a worrying observation since it shows that bots are still able to influence the engagement metrics of a video and that YouTube anti-bots algorithms have not beeen able to follow the evolution of bots activities. Another conclusion that could be drawn, is that YouTube does not consider this kind of bot activity as harmful for the platform or that their conditions to classify a user as a bot are stricter than what we have defined in this study.
+Finally, on Figure 7, we show the correlation matrix of the normalized metrics for normal and suspicious users. We see that the metrics are highly correlated for both normal and suspicious users. This high correlation suggests that YouTube anti-bots algorithms were not able to detect the bots and remove them from the platform since the bots interactions have increased in the same way as normal users interactions. This is a worrying observation since it shows that bots are still able to influence the engagement metrics of a video and that YouTube anti-bots algorithms have not been able to follow the evolution of bots activities. Another conclusion that could be drawn, is that YouTube does not consider this kind of bot activity as harmful for the platform or that their conditions to classify a user as a bot are stricter than what we have defined in this study.
