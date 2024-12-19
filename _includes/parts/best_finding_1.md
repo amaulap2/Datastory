@@ -179,7 +179,7 @@ Finally, we want to understand how bots affect the engagement metrics of a video
 </figure>
 </div>
 
-As expected and as can be seen on <a href="#Figure5">Figure 5</a>, we see that the engagement metrics go up every year for normal users, at the exception of the last year which is simply due to the fact that we do not have the full data for this year. This upward trend is expected since the number of users on Youtube has been increasing every year. All trend seem similar between bots and normal users, beside the number of comments 
+As expected and as can be seen on <a href="#Figure5">Figure 5</a>, we see that the engagement metrics go up every year for normal users, at the exception of the last year which is simply due to the fact that we do not have the full data for this year. This upward trend is expected since the number of users on Youtube has been increasing every year. All trend seem similar between bots and normal users, beside the number of comments which has a very different trend. 
 
 <!-- <div style="text-align: center;" id="Figure6">
 <figure>
@@ -197,7 +197,7 @@ As expected and as can be seen on <a href="#Figure5">Figure 5</a>, we see that t
 
 <div style="text-align: center;" id="Figure6">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/normalized_metrics.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/normalized_metrics_sus.html" 
           width="100%" 
           height="500" 
           style="border:none;">
@@ -212,7 +212,7 @@ As expected and as can be seen on <a href="#Figure5">Figure 5</a>, we see that t
 </figure>
 </div>
 
-On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies and Videos* follow the same trend as normal users. However, we see that the *Comments per User* metric is much higher and pretty much constant over the year for suspicious users. This is an interesting observation since it shows that bots kept the same level of activity over the years. This consistency in activity might be due to the fact that bots are programmed to comment on videos at a constant rate to not arise suspicion from YouTube anti-bot algorithms.
+On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies and number of bots* follow the same trend as normal users. However, we see that the *Comments per User* metric is proportionally higher and pretty much constant over the year for suspicious users. This is an interesting observation since it shows that bots kept the same level of comments per user over the years. 
 
 <!-- <div style="text-align: center;">
 <figure>
@@ -249,4 +249,53 @@ On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies 
 </div>
 
 
-Finally, on Figure 7, we show the correlation matrix of the normalized metrics for normal and suspicious users. We see that the metrics are highly correlated for both normal and suspicious users. This high correlation suggests that YouTube anti-bots algorithms were not able to detect the bots and remove them from the platform since the bots interactions have increased in the same way as normal users interactions. This is a worrying observation since it shows that bots are still able to influence the engagement metrics of a video and that YouTube anti-bots algorithms have not been able to follow the evolution of bots activities. Another conclusion that could be drawn, is that YouTube does not consider this kind of bot activity as harmful for the platform or that their conditions to classify a user as a bot are stricter than what we have defined in this study.
+Finally, on <a href="#Figure6">Figure 7</a>, we show the correlation matrix of the normalized metrics for normal and suspicious users.
+
+**High Correlation Between Groups**
+
+There is a high correlation between some **normal user metrics** and **suspected bot metrics** (values around 0.85-0.99). For example:  
+- `normal_unique_users` correlates strongly with `sus_total_comments` (0.99).  
+- `normal_total_comments` also correlates highly with `sus_total_likes` (0.99).  
+
+This may indicate that the overall platform activity (both normal and suspected bot) is growing over time or responding to similar trends.
+
+**Low Correlation Between Comments per User**
+
+The correlation between `normal_comments_per_user` and `sus_comments_per_user` is significantly lower (0.52). This supports the observation that bots and normal users differ in their commenting behavior, as bots typically have a much higher number of comments per user.
+
+<div style="text-align: center;" id="Figure8">
+<figure>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/Graph_viz_1.png" alt="Local Image" class='center'>
+  <center>
+  <figcaption>
+  <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+    <font size=2>Figure 8: Network Graph visualizing interactions between channels.</font>
+  </p>
+  </figcaption>
+  </center>
+</figure>
+</div>
+
+This network graph illustrates **channels targeted by bots**, where:  
+- **Nodes** represent individual channels targeted by bots.  
+- **Links** between nodes indicate shared suspicious users across channels.  
+
+**Observations:**  
+   - Most channels targeted by bots are interconnected, forming a large primary cluster.  
+   - A second, smaller cluster is composed of several very small "sub-communities."  
+
+**Hypotheses**
+
+1. **Shared Bot Service:**  
+   - Some groups of service providers may be selling bots to multiple clients. Over time, these bots could switch between clients, creating connections between previously unrelated channels.
+
+2. **Normal User Overlap:**  
+   - The presence of regular users within the network could inadvertently connect unrelated channels through their activity.
+
+3. **YouTube's Interconnected Nature:**  
+   - Channels on YouTube are inherently interconnected as users typically engage with multiple channels rather than focusing on a single one.
+
+4. **Sample Bias:**  
+   - Since the graph includes only channels targeted by bots, it’s possible that including non-targeted channels would reveal additional, separate clusters.
+
+To conclude the network graph shows that, within the sample of bot-targeted channels, **most channels are interconnected** through suspicious user activity. However, this analysis is limited to the selected sample and may not represent the broader YouTube ecosystem.
