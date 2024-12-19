@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     titles.forEach(title => {
       const link = document.createElement("a");
       link.href = `#${title.id}`;
-      link.textContent = `- ${title.textContent}`;
+      link.textContent = title.textContent;
       sidebar.appendChild(link);
     });
   });
