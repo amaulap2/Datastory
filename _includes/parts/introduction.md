@@ -237,4 +237,6 @@ Now let's demonstrate the differences in the distribution between Type-2 bots an
 </figure>
 </div>
 
-The violin graph shows the distribution of videos commented on per day by normal and suspicious users. It helps compare how the two categories stack up and reveals that "suspicious" users tend to comment more often. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30).
+The violin graphs show the distribution of the number of different videos commented per day by normal and suspicious users. It helps to visualize that for Type-2 bots the pattern is very different from normal users.It reveals that "suspicious" users of Type-2 tend to comment on more videos. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30). 
+
+To summerize, we showed that after filtering the data with Filter-1 got some some suspicious users, and we were able to separate these from normal users. Additionally after applying Filter-2 we also got an other set of suspicious users, and we were also able to show a big difference with respect with normal users. Eventually there is a big overlap between both sets of suspicious users. 

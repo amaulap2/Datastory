@@ -55,7 +55,7 @@ In <a href="#Figure1">Figure 1</a>, we first show the proportion of comments per
 </figure>
 </div> -->
 
-<div style="text-align: center;" id="Figure1">
+<div style="text-align: center;" id="Figure2">
 <figure>
   <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_comments_per_category_sus.html" 
           width="100%" 
@@ -92,9 +92,9 @@ Another interesting question to ask is whether bots target specific channels, me
 </figure>
 </div> -->
 
-<div style="text-align: center;" id="Figure1">
+<div style="text-align: center;" id="Figure3">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_normal_per_channel.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_normal_per_channels.html" 
           width="100%" 
           height="500" 
           style="border:none;">
@@ -126,7 +126,7 @@ In <a href="#Figure3">Figure 3</a>, we show the proportion of normal users comme
 
 <div style="text-align: center;" id="Figure4">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_sus_per_channel.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_bots_per_channels_sus.html" 
           width="100%" 
           height="500" 
           style="border:none;">
@@ -134,7 +134,7 @@ In <a href="#Figure3">Figure 3</a>, we show the proportion of normal users comme
   <center>
   <figcaption>
     <p style="margin-top:-0.6cm;margin-left:0.2cm;">
-      <font size="2">Figure 4: Proportion of Suspicious Users commenting on 1, 2,..., 5+ Channels.</font>
+      <font size="2">Figure 4: Proportion of Suspicious Users commenting on 1, 2,...,+Channels  </font>
     </p>
   </figcaption>
   </center>
@@ -146,6 +146,7 @@ On the other hand, on <a href="#Figure4">Figure 4</a>, we observe that most susp
 ### How do Bots Affect Engagement Metrics?
 
 Finally, we want to understand how bots affect the engagement metrics of a video. To do this, we analyzed some important metrics such as the number of views, likes and comments on a video. We compared the engagement metrics of videos with a high proportion of comments from bots to videos with a low proportion of comments from bots. Here the normalization is done by dividing the engagement metrics by their maximum value registered in the dataset.
+
 <!-- 
 <div style="text-align: center;" id="Figure5">
 <figure>
