@@ -126,7 +126,7 @@ In <a href="#Figure3">Figure 3</a>, we show the proportion of normal users comme
 
 <div style="text-align: center;" id="Figure4">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_sus_per_channels.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_bots_per_channels_sus.html" 
           width="100%" 
           height="500" 
           style="border:none;">
@@ -134,7 +134,7 @@ In <a href="#Figure3">Figure 3</a>, we show the proportion of normal users comme
   <center>
   <figcaption>
     <p style="margin-top:-0.6cm;margin-left:0.2cm;">
-      <font size="2">Figure 4: Proportion of Suspicious Users commenting on 1, 2,..., 5+Channels. </font>
+      <font size="2">Figure 4: Proportion of Suspicious Users commenting on 1, 2,...,+Channels  </font>
     </p>
   </figcaption>
   </center>
