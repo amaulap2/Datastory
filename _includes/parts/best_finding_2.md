@@ -6,6 +6,23 @@ First, it’s important to define what we mean by *lifetime*. The definition we 
 
 ## 1. Lifetime of Bots
 
+<div style="text-align: center;" id="Figure1">
+<figure>
+  <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/violin_plots_lifetime.html" 
+          width="100%" 
+          height="500" 
+          style="border:none;">
+  </iframe>
+  <center>
+  <figcaption>
+    <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+      <font size="2">Violin plot of the 3 definitions of lifetime</font>
+    </p>
+  </figcaption>
+  </center>
+</figure>
+</div>
+
 We explored the **lifetime of bots** using three different calculations to understand how long they are active and to derive meaningful insights about their behavior. Below is an explanation of each approach.
 
 
@@ -48,7 +65,8 @@ We explored the **lifetime of bots** using three different calculations to under
 
 <p>At first glance, the <a href="#lifetime_1">violin plot 1</a> doesn’t give us much to work with. It’s hard to tell normal users apart from suspicious ones because their distributions look almost identical. But when we move to the <a href="#lifetime_2">plot</a> for the second definition, things start to shift. Suspicious users clearly have much shorter lifetimes, which aligns with what we’d expect — bot accounts usually don’t stick around for long. This doesn’t give us a definitive answer, but it hints at possible reasons, like YouTube’s algorithm catching them quickly or bots being deployed for short-term campaigns. Finally, the <a href="#lifetime_3">plot</a> strikes a better balance, showing that most suspicious accounts stop commenting right after their first suspicious activity. Interestingly, some accounts live on for 4000 or even 5000 days. This could be because the accounts were hacked to operate as bots and then reclaimed by their original owners, going back to behaving like normal users.</p>
 
-Now that we'v eclearly defined different lifetime. Let's look at our question previous question : 
+Now that we've clearly defined different lifetime. Let's look at our question previous question : 
+
 
 ### Is there a correlation between the number of days of suspicious activity and the lifetime of an account?
 
