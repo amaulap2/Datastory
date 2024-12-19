@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get all headings (h2, h3, h4, etc.) from the content area
-  const contentHeadings = document.querySelectorAll(".content h1, .content h2, .content h3, .content h4");
+  const contentHeadings = document.querySelectorAll(".content h1"); // .content h2, .content h3, .content h4");
   console.log(contentHeadings);
   // Get the sidebar summary element
   const summary = document.getElementById("summary");
