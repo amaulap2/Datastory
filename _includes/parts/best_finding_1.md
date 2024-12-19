@@ -145,7 +145,7 @@ On the other hand, on <a href="#Figure4">Figure 4</a>, we observe that most susp
 
 ### How do Bots Affect Engagement Metrics?
 
-Finally, we want to understand how bots affect the engagement metrics of a video. To do this, we analyzed some important metrics such as the number of views, likes and comments on a video. We compared the engagement metrics of videos with a high proportion of comments from bots to videos with a low proportion of comments from bots. Here the normalization is done by dividing the engagement metrics by their maximum value registered in the dataset.
+Finally, we want to understand how bots affect the engagement metrics of a video. To do this, we analyzed some important metrics such as the number of likes, comments, and replies on a video. We compared the engagement metrics of videos with a high proportion of comments from bots to videos with a low proportion of comments from bots. Here the normalization is done by dividing the engagement metrics by their maximum value registered in the dataset.
 
 <!-- 
 <div style="text-align: center;" id="Figure5">
@@ -179,7 +179,7 @@ Finally, we want to understand how bots affect the engagement metrics of a video
 </figure>
 </div>
 
-As expected and as can be seen on <a href="#Figure5">Figure 5</a>, we see that the engagement metrics go up every year for normal users, at the exception of the last year which is simply due to the fact that we do not have the full data for this year. This upward trend is expected since the number of users on Youtube has been increasing every year.
+As expected and as can be seen on <a href="#Figure5">Figure 5</a>, we see that the engagement metrics go up every year for normal users, at the exception of the last year which is simply due to the fact that we do not have the full data for this year. This upward trend is expected since the number of users on Youtube has been increasing every year. All trend seem similar between bots and normal users, beside the number of comments 
 
 <!-- <div style="text-align: center;" id="Figure6">
 <figure>
