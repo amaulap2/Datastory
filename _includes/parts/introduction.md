@@ -214,7 +214,7 @@ We were able to compute a Hard-SVM hyperplane to separate normal users and bots 
 </figure>
 </div>
 
-We clearly see that bots Type-1 comment on **less different videos** (often less than 20) than normal users (usually way above 50). They have a higher number of **comments per user**,usually more than 20, whereas normal users are consistently under 10. This is computed by (total number of comments in a year)/(number of distinct videos commented that year). We can notice the increase of both metrics for both along the years. Beside that normal users only increase the number of different videos watched across years, illustrating the growth of the presence per users along the years, which was expected, as we use YT much more nowadays than 20 years ago. As a reminder normal users were selected randomly among users which had at least 100 comments in their lifetime, so potentially they could have more than 10 comments/user in this graph. However this is highly unlikely, this is why we were able to separate both groups with a Hard-SVM plane. 
+Bots Type-1 typically comment on fewer than 20 distinct videos annually, while normal users comment on more than 50. Bots also exhibit a higher number of comments per user, often exceeding 20 comments per distinct video annually, whereas normal users remain under 10. This is computed by (total number of comments in a year)/(number of distinct videos commented that year). Over the years, both groups show an increase in these metrics, but normal users primarily expand the number of distinct videos they comment on, reflecting the broader adoption of YouTube over time. Normal users were randomly selected from those with at least 100 lifetime comments, which could theoretically result in averages exceeding 10 comments per video, but this remains unlikely. These distinct behavioral patterns allowed for a clear separation between bots and normal users using a Hard-SVM plane.
 
 
 ### Detecting Type-2 bots
@@ -238,5 +238,5 @@ Now let's demonstrate the differences in the distribution between Type-2 bots an
 </div>
 
 The violin graphs show the distribution of the number of different videos commented per day by normal and suspicious users. It helps to visualize that for Type-2 bots the pattern is very different from normal users.It reveals that "suspicious" users of Type-2 tend to comment on more videos. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30). 
-
+ 
 Our analysis showed that filtering the data using Filter-1 and Filter-2 successfully identified two overlapping sets of suspicious users. These filters revealed key differences in behavior between bots and normal users, enabling us to distinguish the two groups effectively. This overlap provides further evidence of the presence of bot activity on YouTube.
