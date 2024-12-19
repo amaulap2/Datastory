@@ -16,7 +16,14 @@ Here are the abbreviations and descriptions of the different attributes we use t
 - **MVT (Maximum Videos Commented in Total):** Maximum number of different videos commented on across the bot's lifetime.  
 - **NSD (Number of Suspicious Days):** Maximum suspicious days detected (between the number of suspicious days detected by Filter 1 and Filter 2).
 
+|                                  LIF (Lifetime)                                  |            MDC (Maximum Daily Comments)           |             TLC (Total Lifetime Comments)            |
+|:--------------------------------------------------------------------------------:|:-------------------------------------------------:|:----------------------------------------------------:|
+| Duration from the first to the  last day where we detected  suspicious activity. | Maximum number of  comments made in a single day. | Total number of comments  during the bot’s lifetime. |
 
+
+|              MVD (Maximum Videos Commented in a Day)              |                   MVT (Maximum Videos Commented in Total)                   |                                         NSD (Number of Suspicious Days)                                         |
+|:-----------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|
+| Maximum number of different  videos commented on in a single day. | Maximum number of different videos  commented on across the bot’s lifetime. | Maximum suspicious days detected   (between the number of suspicious   days detected by Filter 1 and Filter 2). |
 
 ## 🏅 **1. Award for the Most Curious Bot**
 
