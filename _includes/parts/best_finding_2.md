@@ -77,13 +77,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_LT1_sus_days.html" 
-              width="100%" 
-              height="700" 
+              width="130%" 
+              height="500" 
               style="border:none;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.1cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
             <font size="2">Correlation with the first definition of lifetime</font>
           </p>
         </figcaption>
@@ -95,13 +95,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_LT2_sus_days.html" 
-              width="100%" 
-              height="700" 
+              width="130%" 
+              height="500" 
               style="border:none;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.1cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
             <font size="2">Correlation with the second definition of lifetime</font>
           </p>
         </figcaption>
@@ -113,13 +113,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_LT3_sus_days.html" 
-              width="100%" 
-              height="700" 
+              width="130%" 
+              height="500" 
               style="border:none;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.1cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
             <font size="2">Correlation with the third definition of lifetime</font>
           </p>
         </figcaption>
@@ -131,13 +131,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_vid_com_sus_days.html" 
-              width="100%" 
-              height="700" 
+              width="130%" 
+              height="500" 
               style="border:none;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.1cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
             <font size="2">Correlation with number of videos commented</font>
           </p>
         </figcaption>
