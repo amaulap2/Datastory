@@ -215,7 +215,11 @@ On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies 
 
 <!-- <div style="text-align: center;">
 <figure>
-  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/corr_map_evol_normal_sus_T1.svg" alt="Local Image" class='center'>
+<iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/heatmap_norm_sus.html" 
+          width="100%" 
+          height="500" 
+          style="border:none;">
+  </iframe>
   <center>
   <figcaption>
   <p style="margin-top:-0.2cm;margin-left:0.2cm;">
