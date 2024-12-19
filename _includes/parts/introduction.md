@@ -15,12 +15,13 @@ For Type-1 behavior, the average number of comments per video is around 1.5, wit
 
 For Type-2 behavior, we set an initial threshold of at least 10 different videos commented on a single day. This is a conservative threshold to help us distinguish bots from genuine users. Since bots are known to target thousands of videos, this threshold helps us be cautious in our data analysis and avoid false positives.
 
-<div style="border: 2px solidrgb(2, 13, 2); padding: 10px; background-color:rgb(17, 17, 17); border-radius: 8px; font-family: Arial, sans-serif;">
+<div style="border: 2px solidrgb(2, 13, 2); padding: 10px; background-color:rgb(235, 228, 228); border-radius: 8px; font-family: Roboto, Arial, sans-serif, ;">
   <div style="font-size: 18px; color:rgb(15, 23, 31);">
      <p style="font-size: 18px; font-weight: bold;">Filter-1 = Mean + 2 * Standard Deviation = <span style="color:rgb(14, 12, 12);">9 comments per video</span></p>
      <p style="font-size: 18px; font-weight: bold;">Filter-2 = <span style="color:rgb(8, 8, 8);">10 videos commented in a day</span></p>
   </div>
 </div>
+
 <!-- <div style="border: 1px solid black; padding: 15px; background-color: white; border-radius: 8px; font-family: 'Times New Roman', serif;">
   <h2 style="margin-top: 0; text-align: center;">Filters for Data Analysis</h2>
   <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 1.2em;">
