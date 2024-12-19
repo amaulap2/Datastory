@@ -21,7 +21,7 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
      <p style="font-size: 18px; font-weight: bold;">Filter-2 = <span style="color: #d32f2f;">10 videos commented in a day</span></p>
   </div>
 </div> -->
-<div style="border: 1px solid black; padding: 15px; background-color: white; border-radius: 8px; font-family: 'Times New Roman', serif;">
+<!-- <div style="border: 1px solid black; padding: 15px; background-color: white; border-radius: 8px; font-family: 'Times New Roman', serif;">
   <h2 style="margin-top: 0; text-align: center;">Filters for Data Analysis</h2>
   <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 1.2em;">
     <li style="margin-bottom: 10px;">
@@ -32,7 +32,37 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
     </li>
   </ul>
 </div>
-## Can We Reliably Detect Bots?
+-->
+<div style="border: 1px solid black; padding: 15px; background-color: white; border-radius: 8px; font-family: 'Times New Roman', serif;">
+  <h2 style="margin-top: 0; text-align: center;">Filters for Data Analysis</h2>
+  <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 1.2em;">
+    <li style="margin-bottom: 10px;">
+      <strong>Filter-1:</strong>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mi>Mean</mi>
+        <mo>+</mo>
+        <mn>2</mn>
+        <mo>&#x2062;</mo>
+        <mi>Standard</mi>
+        <mo>&#x2062;</mo>
+        <mi>Deviation</mi>
+        <mo>=</mo>
+        <mn>9</mn>
+      </math>
+      comments per video
+    </li>
+    <li>
+      <strong>Filter-2:</strong>
+      At least 
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mn>10</mn>
+      </math>
+      videos commented in a day
+    </li>
+  </ul>
+</div>
+
+## Can We Reliably Detect Bots? 
 What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
 
 <div style="text-align: center;">
