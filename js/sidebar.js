@@ -3,15 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
     const titles = document.querySelectorAll("h1");
   
     sidebar.innerHTML = '';  // Clear existing content
-  
+
     titles.forEach(title => {
       const link = document.createElement("a");
       link.href = `#${title.id}`;
-      link.textContent = `- ${title.textContent}`;
+      link.textContent = title.textContent;
       sidebar.appendChild(link);
     });
   });
-
 
 // All method
 
