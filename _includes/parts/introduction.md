@@ -87,15 +87,9 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
 
 
 ## Can We Reliably Detect Bots? 
-What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
+The goal of this section is to demonstrate the reader that with our filters we were able to efficiently detect potential bots by separating them from normal users. First of all, we discovered that bots categories Type-1 and Type-2 overlap.
 
-<div style="text-align: center;">
-  <img src="{{ site.baseurl }}/assets/data/introduction/violin.png" alt="Local Image">
-</div>
-
-The violin graph shows the distribution of videos commented on per day by normal and suspicious users. It helps compare how the two categories stack up and reveals that "suspicious" users tend to comment more often. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30).
-
-## Intersection
+### Intersection
 
 Let's study the link between the different type of bots. Let <math> <msub><mi>T</mi><mn>1</mn></msub></math> be the dataset of bots of type 1 and <math> <msub><mi>T</mi><mn>2</mn></msub></math> the dataset of bots of type 2. We define the following quantities :
 
@@ -196,3 +190,15 @@ We created a stacked area plot of the different groups. The intersection represe
   </center>
 </figure>
 </div>
+
+What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
+
+### Detecting Type-1 bots
+
+### Detecting Type-2 bots
+Now let's demonstrate the differences in the distribution between Type-2 bots and normal users.
+<div style="text-align: center;">
+  <img src="{{ site.baseurl }}/assets/data/introduction/violin.png" alt="Local Image">
+</div>
+
+The violin graph shows the distribution of videos commented on per day by normal and suspicious users. It helps compare how the two categories stack up and reveals that "suspicious" users tend to comment more often. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30).
