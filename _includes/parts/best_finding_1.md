@@ -127,7 +127,7 @@ On <a href="#Figure6">Figure 6</a>, we see that *Total Likes, Comments, Replies 
 
 <div style="text-align: center;">
 <figure>
-  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/heatmap_norm_sus.svg" alt="Local Image" class='center'>
+  <img src="{{ site.baseurl }}/assets/data/type-1_analysis/heatmap_norm_sus.html" alt="Local Image" class='center'>
   <center>
   <figcaption>
   <p style="margin-top:-0.2cm;margin-left:0.2cm;">
