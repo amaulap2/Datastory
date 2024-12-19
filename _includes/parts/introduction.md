@@ -15,12 +15,12 @@ For Type-1 behavior, the average number of comments per video is around 1.5, wit
 
 For Type-2 behavior, we set an initial threshold of at least 10 different videos commented on a single day. This is a conservative threshold to help us distinguish bots from genuine users. Since bots are known to target thousands of videos, this threshold helps us be cautious in our data analysis and avoid false positives.
 
-<!-- <div style="border: 2px solidrgb(2, 13, 2); padding: 10px; background-color: #e8f5e9; border-radius: 8px; font-family: Arial, sans-serif;">
-  <div style="font-size: 18px; color: #1976d2;">
-     <p style="font-size: 18px; font-weight: bold;">Filter-1 = Mean + 2 * Standard Deviation = <span style="color: #d32f2f;">9 comments per video</span></p>
-     <p style="font-size: 18px; font-weight: bold;">Filter-2 = <span style="color: #d32f2f;">10 videos commented in a day</span></p>
+<div style="border: 2px solidrgb(2, 13, 2); padding: 10px; background-color:rgb(17, 17, 17); border-radius: 8px; font-family: Arial, sans-serif;">
+  <div style="font-size: 18px; color:rgb(15, 23, 31);">
+     <p style="font-size: 18px; font-weight: bold;">Filter-1 = Mean + 2 * Standard Deviation = <span style="color:rgb(14, 12, 12);">9 comments per video</span></p>
+     <p style="font-size: 18px; font-weight: bold;">Filter-2 = <span style="color:rgb(8, 8, 8);">10 videos commented in a day</span></p>
   </div>
-</div> -->
+</div>
 <!-- <div style="border: 1px solid black; padding: 15px; background-color: white; border-radius: 8px; font-family: 'Times New Roman', serif;">
   <h2 style="margin-top: 0; text-align: center;">Filters for Data Analysis</h2>
   <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 1.2em;">
@@ -33,7 +33,7 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
   </ul>
 </div>
 -->
-<math display="block" class="tml-display" style="display: block; font-family: 'Times New Roman', serif; font-size: 1.5em;">
+<!-- <math display="block" class="tml-display" style="display: block; font-family: 'Times New Roman', serif; font-size: 1.5em;">
   <mrow>
     <mo fence="true" form="prefix" stretchy="true" style="font-size: 1.2em;">{</mo>
     <mtable displaystyle="true" columnalign="right left" style="margin-left: 1em;">
@@ -83,7 +83,7 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
     </mtable>
     <mo fence="true" form="postfix" stretchy="true" style="font-size: 1.2em;">}</mo>
   </mrow>
-</math>
+</math> -->
 
 
 ## Can We Reliably Detect Bots? 
@@ -214,7 +214,7 @@ We were able to compute a Hard-SVM hyperplane to separate normal users and bots 
 </figure>
 </div>
 
-We clearly see that bots Type-1 comment on **less different videos** (often less than 20) than normal users (usually way above 50). They have a higher number of **comments per user**,usually more than 20, whereas normal users are consistently under 10. This is computed by (total number of comments in a year)/(number of distinct videos commented that year). We can notice the increase of both metrics for both along the years. Beside that normal users only increase the number of different videos watched across years, illustrating the growth of the presence per users along the years, which was expected, as we use YT much more nowadays than 20 years ago. As a reminder normal users were selected randomly among users which had at least 100 comments in their lifetime, so potentially they could have more than 10 comments/user in this graph. However this is highly unlikely, this is why we were able to separate both groups with a Hard-SVM plane. 
+Bots Type-1 typically comment on fewer than 20 distinct videos annually, while normal users comment on more than 50. Bots also exhibit a higher number of comments per user, often exceeding 20 comments per distinct video annually, whereas normal users remain under 10. This is computed by (total number of comments in a year)/(number of distinct videos commented that year). Over the years, both groups show an increase in these metrics, but normal users primarily expand the number of distinct videos they comment on, reflecting the broader adoption of YouTube over time. Normal users were randomly selected from those with at least 100 lifetime comments, which could theoretically result in averages exceeding 10 comments per video, but this remains unlikely. These distinct behavioral patterns allowed for a clear separation between bots and normal users using a Hard-SVM plane.
 
 
 ### Detecting Type-2 bots
@@ -238,5 +238,5 @@ Now let's demonstrate the differences in the distribution between Type-2 bots an
 </div>
 
 The violin graphs show the distribution of the number of different videos commented per day by normal and suspicious users. It helps to visualize that for Type-2 bots the pattern is very different from normal users.It reveals that "suspicious" users of Type-2 tend to comment on more videos. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30). 
-
-To summerize, we showed that after filtering the data with Filter-1 got some some suspicious users, and we were able to separate these from normal users. Additionally after applying Filter-2 we also got an other set of suspicious users, and we were also able to show a big difference with respect with normal users. Eventually there is a big overlap between both sets of suspicious users. 
+ 
+Our analysis showed that filtering the data using Filter-1 and Filter-2 successfully identified two overlapping sets of suspicious users. These filters revealed key differences in behavior between bots and normal users, enabling us to distinguish the two groups effectively. This overlap provides further evidence of the presence of bot activity on YouTube.
