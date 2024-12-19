@@ -6,18 +6,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
     console.log(titles)
 
-  // Convert NodeList to an array and skip the first element
+
+    // Create a list to hold the TOC items
+    const tocList = document.createElement("ul");
+
+    // Convert NodeList to an array and skip the first element
     Array.from(titles).slice(1).forEach(title => {
+
+    const listItem = document.createElement("li");
+
     const link = document.createElement("a");
     link.href = `#${title.id}`;
     link.textContent = title.textContent;
-    sidebar.appendChild(link);
+    listItem.appendChild(link);
+    
+    tocList.appendChild(listItem)
   });
+
+  sidebar.appendChild(tocList)
 });
 
 // All method
 
-/*
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get all headings (h2, h3, h4, etc.) from the content area
   const contentHeadings = document.querySelectorAll(".content h1"); // .content h2, .content h3, .content h4");
@@ -63,4 +74,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Append the TOC list to the sidebar
   summary.appendChild(tocList);
 });
-*/
