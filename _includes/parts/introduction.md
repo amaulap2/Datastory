@@ -207,15 +207,14 @@ We were able to compute a Hard-SVM hyperplane to separate normal users and bots 
   <center>
   <figcaption>
     <p style="margin-top:-0.6cm;margin-left:0.2cm;">
-      <font size="2">Figure 1: 3D Plot of Average comments per user, and number of different videos commented</font>
+      <font size="2">Figure 1: 3D Plot of Average comments per user and number of different videos commented</font>
     </p>
   </figcaption>
   </center>
 </figure>
 </div>
-We clearly see that bots Type-1 comment on less different videos than normal users. They have a higher number of comments per user . This is computed by (total number of comments in a year)/(number of distinct videos commented that year). 
 
-
+We clearly see that bots Type-1 comment on **less different videos** (often less than 20) than normal users (usually way above 50). They have a higher number of **comments per user**,usually more than 20, whereas normal users are consistently under 10. This is computed by (total number of comments in a year)/(number of distinct videos commented that year). We can notice the increase of both metrics for both along the years. Beside that normal users only increase the number of different videos watched across years, illustrating the growth of the presence per users along the years, which was expected, as we use YT much more nowadays than 20 years ago. As a reminder normal users were selected randomly among users which had at least 100 comments in their lifetime, so potentially they could have more than 10 comments/user in this graph. However this is highly unlikely, this is why we were able to separate both groups with a Hard-SVM plane. 
 
 
 ### Detecting Type-2 bots
