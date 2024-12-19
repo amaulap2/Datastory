@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const sidebar = document.querySelector(".sidebar");
+    const titles = document.querySelectorAll("h1");
+  
+    sidebar.innerHTML = '';  // Clear existing content
+  
+    titles.forEach(title => {
+      const link = document.createElement("a");
+      link.href = `#${title.id}`;
+      link.textContent = `• ${title.textContent}`;
+      sidebar.appendChild(link);
+    });
+  });
+
+
+// All method
+
+/*
 document.addEventListener("DOMContentLoaded", function () {
   // Get all headings (h2, h3, h4, etc.) from the content area
   const contentHeadings = document.querySelectorAll(".content h1"); // .content h2, .content h3, .content h4");
@@ -43,3 +61,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Append the TOC list to the sidebar
   summary.appendChild(tocList);
 });
+*/
