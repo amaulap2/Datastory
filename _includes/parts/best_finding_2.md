@@ -71,19 +71,18 @@ Here the third <a href="#correlation">correlation graph</a> doesn't seem to give
 Lastly, the <a href="#correlation">correlation plot</a> reveals that the more suspicious days an account has, the more videos it has commented on. This is quite intuitive and aligns with our expectations. In fact, one might have expected an even stronger correlation between these two variables. However, this relatively moderate correlation suggests that some accounts can comment on a large number of videos within a short time frame, without needing to spread their activity over multiple days. This points to the possibility that the relationship between suspicious days and commenting activity may not be as tightly linked as initially assumed.
 
 
-
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
   <!-- First figure -->
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_LT1_sus_days.html" 
-              width="130%" 
-              height="500" 
-              style="border:none;">
+              width="100%" 
+              height="550" 
+              style="border:none; overflow: hidden;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.4cm;">
             <font size="2">Correlation with the first definition of lifetime</font>
           </p>
         </figcaption>
@@ -95,13 +94,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_LT2_sus_days.html" 
-              width="130%" 
-              height="500" 
-              style="border:none;">
+              width="100%" 
+              height="550" 
+              style="border:none; overflow: hidden;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.4cm;">
             <font size="2">Correlation with the second definition of lifetime</font>
           </p>
         </figcaption>
@@ -113,13 +112,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_LT3_sus_days.html" 
-              width="130%" 
-              height="500" 
-              style="border:none;">
+              width="100%" 
+              height="550" 
+              style="border:none; overflow: hidden;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.4cm;">
             <font size="2">Correlation with the third definition of lifetime</font>
           </p>
         </figcaption>
@@ -131,13 +130,13 @@ Lastly, the <a href="#correlation">correlation plot</a> reveals that the more su
   <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="correlation">
     <figure>
       <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/corr_vid_com_sus_days.html" 
-              width="130%" 
-              height="500" 
-              style="border:none;">
+              width="100%" 
+              height="550" 
+              style="border:none; overflow: hidden;">
       </iframe>
       <center>
         <figcaption>
-          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+          <p style="margin-top:-0.4cm;">
             <font size="2">Correlation with number of videos commented</font>
           </p>
         </figcaption>
