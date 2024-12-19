@@ -4,13 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
   
     sidebar.innerHTML = '';  // Clear existing content
 
-    titles.forEach(title => {
-      const link = document.createElement("a");
-      link.href = `#${title.id}`;
-      link.textContent = title.textContent;
-      sidebar.appendChild(link);
-    });
+  // Convert NodeList to an array and skip the first element
+    Array.from(titles).slice(1).forEach(title => {
+    const link = document.createElement("a");
+    link.href = `#${title.id}`;
+    link.textContent = title.textContent;
+    sidebar.appendChild(link);
   });
+});
 
 // All method
 
