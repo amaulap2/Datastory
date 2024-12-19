@@ -69,14 +69,14 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
             <mi>Filter</mi>
             <mn>2</mn>
             <mo>:</mo>
-            <mi>At</mi>
-            <mi>least</mi>
+            <mo>At</mo>
+            <mo>least</mo>
             <mn>10</mn>
             <mo>videos</mo>
             <mo>commented</mo>
             <mo>in</mo>
-            <mi>a</mi>
-            <mi>day</mi>
+            <mo>a</mo>
+            <mo>day</mo>
           </mrow>
         </mtd>
       </mtr>
