@@ -1,30 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sidebar = document.querySelector(".sidebar");
-    const summary = document.getElementById("summary");
     const titles = document.querySelectorAll("h1");
   
     sidebar.innerHTML = '';  // Clear existing content
 
     console.log(titles)
-
-
-    // Create a list to hold the TOC items
-    const tocList = document.createElement("ul");
+    console.log("update")
 
     // Convert NodeList to an array and skip the first element
     Array.from(titles).slice(1).forEach(title => {
-
-    const listItem = document.createElement("li");
-
     const link = document.createElement("a");
     link.href = `#${title.id}`;
-    link.textContent = title.textContent;
-    listItem.appendChild(link);
-    
-    tocList.appendChild(listItem)
+    link.textContent = `${title.textContent} <br>`;
+    summary.appendChild(link);
   });
-
-  summary.appendChild(tocList)
 });
 
 // All method
