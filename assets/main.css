@@ -381,20 +381,13 @@ html {
 
 /* Sidebar Styling */
 .sidebar {
-  width: 200px;   /* Adjust as necessary */
-  height: 200px;  /* Ensure height and width are equal for circular shape */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  /*width: 220px; /* Set the width of your sidebar */
+  width: 220px; /* Set the width of your sidebar */
   background-color: #e1e1e1; /* A light background for the sidebar */
   padding: 20px;
   position: fixed; /* Make the sidebar fixed */
   top: 0;
   left: 0;
-  /*height: 100%;*/
+  height: 100%;
   overflow-y: auto; /* Scroll the sidebar if content overflows */
 }
 
