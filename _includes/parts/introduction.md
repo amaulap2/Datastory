@@ -219,8 +219,22 @@ We clearly see that bots Type-1 comment on **less different videos** (often less
 
 ### Detecting Type-2 bots
 Now let's demonstrate the differences in the distribution between Type-2 bots and normal users.
-<div style="text-align: center;">
-  <img src="{{ site.baseurl }}/assets/data/introduction/violin.png" alt="Local Image">
+
+<div style="text-align: center;" id="Figure1">
+<figure>
+  <iframe src="{{ site.baseurl }}/assets/data/introduction/dist_num_comments_norm_sus.html" 
+          width="100%" 
+          height="500" 
+          style="border:none;">
+  </iframe>
+  <center>
+  <figcaption>
+    <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+      <font size="2">Figure 1: 3D Plot of Average comments per user and number of different videos commented</font>
+    </p>
+  </figcaption>
+  </center>
+</figure>
 </div>
 
 The violin graph shows the distribution of videos commented on per day by normal and suspicious users. It helps compare how the two categories stack up and reveals that "suspicious" users tend to comment more often. The "normal" category has a tight, concentrated distribution, with most users commenting on only a few videos. On the other hand, the "suspicious" category is more spread out, with some users commenting on a lot more videos per day (up to 30).
