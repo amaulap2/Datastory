@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const sidebar = document.querySelector(".sidebar");
+    const summary = document.getElementById("summary");
     const titles = document.querySelectorAll("h1");
   
     sidebar.innerHTML = '';  // Clear existing content
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     tocList.appendChild(listItem)
   });
 
-  sidebar.appendChild(tocList)
+  summary.appendChild(tocList)
 });
 
 // All method
