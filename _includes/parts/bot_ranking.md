@@ -9,44 +9,18 @@ With all these metrics, we were able to identify some **very special bots** that
 
 Here are the abbreviations and descriptions of the different attributes we use to evaluate bots:
 
-- **LIF (Lifetime):** Duration from the first to the last day where we detected suspicious activity.  
-- **MDC (Maximum Daily Comments):** Maximum number of comments made in a single day.  
-- **TLC (Total Lifetime Comments):** Total number of comments during the bot's lifetime.  
-- **MVD (Maximum Videos Commented in a Day):** Maximum number of different videos commented on in a single day.  
-- **MVT (Maximum Videos Commented in Total):** Maximum number of different videos commented on across the bot's lifetime.  
-- **NSD (Number of Suspicious Days):** Maximum suspicious days detected (between the number of suspicious days detected by Filter 1 and Filter 2).
+- **LIF :** Duration from the first to the last day where we detected suspicious activity.  
+<br>
+- **MDC :** Maximum number of comments made in a single day.  
+<br>
+- **TLC :** Total number of comments during the bot's lifetime.  
+<br>
+- **MVD :** Maximum number of different videos commented on in a single day.  
+<br>
+- **MVT :** Maximum number of different videos commented on across the bot's lifetime.  
+<br>
+- **NSD :** Maximum suspicious days detected (between the number of suspicious days detected by Filter 1 and Filter 2).
 
-|                                  LIF (Lifetime)                                  |            MDC (Maximum Daily Comments)           |             TLC (Total Lifetime Comments)            |
-|:--------------------------------------------------------------------------------:|:-------------------------------------------------:|:----------------------------------------------------:|
-| Duration from the first to the  last day where we detected  suspicious activity. | Maximum number of  comments made in a single day. | Total number of comments  during the bot’s lifetime. |
-
-
-|              MVD (Maximum Videos Commented in a Day)              |                   MVT (Maximum Videos Commented in Total)                   |                                         NSD (Number of Suspicious Days)                                         |
-|:-----------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------:|
-| Maximum number of different  videos commented on in a single day. | Maximum number of different videos  commented on across the bot’s lifetime. | Maximum suspicious days detected   (between the number of suspicious   days detected by Filter 1 and Filter 2). |
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-</style>
-<table class="tg"><thead>
-  <tr>
-    <th class="tg-c3ow">MVD (Maximum Videos Commented in a Day)</th>
-    <th class="tg-c3ow">MVT (Maximum Videos Commented in Total)</th>
-    <th class="tg-c3ow">NSD (Number of Suspicious Days)</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td class="tg-c3ow">Maximum number of different <br>videos commented on in a single day.</td>
-    <td class="tg-c3ow">Maximum number of different videos <br>commented on across the bot’s lifetime.</td>
-    <td class="tg-c3ow">Maximum suspicious days detected  <br>(between the number of suspicious  <br>days detected by Filter 1 and Filter 2).</td>
-  </tr>
-</tbody>
-</table>
 
 ## 🏅 **1. Award for the Most Curious Bot**
 
