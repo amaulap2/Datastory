@@ -268,7 +268,7 @@ The correlation between `normal_comments_per_user` and `sus_comments_per_user` i
   <img src="{{ site.baseurl }}/assets/data/type-1_analysis/Graph_viz_1.png" alt="Local Image" class='center'>
   <center>
   <figcaption>
-  <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+  <p style="margin-top:-0.2cm;margin-left:0.2cm;">
     <font size=2>Figure 8: Network Graph visualizing interactions between channels.</font>
   </p>
   </figcaption>
