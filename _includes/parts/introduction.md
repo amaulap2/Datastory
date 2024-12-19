@@ -33,10 +33,10 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
   </ul>
 </div>
 -->
-<math display="block" class="tml-display" style="display: block; font-family: 'Times New Roman', serif;">
+<math display="block" class="tml-display" style="display: block; font-family: 'Times New Roman', serif; font-size: 1.5em;">
   <mrow>
-    <mo fence="true" form="prefix">{</mo>
-    <mtable displaystyle="true" columnalign="right left">
+    <mo fence="true" form="prefix" stretchy="true" style="font-size: 1.2em;">{</mo>
+    <mtable displaystyle="true" columnalign="right left" style="margin-left: 1em;">
       <mtr>
         <mtd class="tml-right" style="padding: 0.7ex 0em 0.7ex 0em;">
           <mrow></mrow>
@@ -81,9 +81,10 @@ For Type-2 behavior, we set an initial threshold of at least 10 different videos
         </mtd>
       </mtr>
     </mtable>
-    <mo fence="true" form="postfix"></mo>
+    <mo fence="true" form="postfix" stretchy="true" style="font-size: 1.2em;">}</mo>
   </mrow>
 </math>
+
 
 ## Can We Reliably Detect Bots? 
 What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
