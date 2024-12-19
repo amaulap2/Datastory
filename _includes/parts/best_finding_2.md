@@ -23,6 +23,82 @@ First, it’s important to define what we mean by *lifetime*. The definition we 
 </figure>
 </div>
 
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <!-- First figure -->
+  <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="Figure1">
+    <figure>
+      <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/violin_plots_lifetime.html" 
+              width="100%" 
+              height="500" 
+              style="border:none;">
+      </iframe>
+      <center>
+        <figcaption>
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+            <font size="2">Violin plot of the 3 definitions of lifetime</font>
+          </p>
+        </figcaption>
+      </center>
+    </figure>
+  </div>
+
+  <!-- Second figure -->
+  <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="Figure2">
+    <figure>
+      <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/violin_plots_lifetime.html" 
+              width="100%" 
+              height="500" 
+              style="border:none;">
+      </iframe>
+      <center>
+        <figcaption>
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+            <font size="2">Violin plot of the 3 definitions of lifetime</font>
+          </p>
+        </figcaption>
+      </center>
+    </figure>
+  </div>
+
+  <!-- Third figure -->
+  <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="Figure3">
+    <figure>
+      <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/violin_plots_lifetime.html" 
+              width="100%" 
+              height="500" 
+              style="border:none;">
+      </iframe>
+      <center>
+        <figcaption>
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+            <font size="2">Violin plot of the 3 definitions of lifetime</font>
+          </p>
+        </figcaption>
+      </center>
+    </figure>
+  </div>
+
+  <!-- Fourth figure -->
+  <div style="flex: 1 0 45%; text-align: center; margin-bottom: 20px;" id="Figure4">
+    <figure>
+      <iframe src="{{ site.baseurl }}/assets/data/best_finding_2/violin_plots_lifetime.html" 
+              width="100%" 
+              height="500" 
+              style="border:none;">
+      </iframe>
+      <center>
+        <figcaption>
+          <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+            <font size="2">Violin plot of the 3 definitions of lifetime</font>
+          </p>
+        </figcaption>
+      </center>
+    </figure>
+  </div>
+</div>
+
+
 We explored the **lifetime of bots** using three different calculations to understand how long they are active and to derive meaningful insights about their behavior. Below is an explanation of each approach.
 
 
