@@ -94,7 +94,7 @@ Another interesting question to ask is whether bots target specific channels, me
 
 <div style="text-align: center;" id="Figure3">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_normal_per_channel.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_normal_per_channels.html" 
           width="100%" 
           height="500" 
           style="border:none;">
@@ -126,7 +126,7 @@ In <a href="#Figure3">Figure 3</a>, we show the proportion of normal users comme
 
 <div style="text-align: center;" id="Figure4">
 <figure>
-  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_sus_per_channel.html" 
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/prop_sus_per_channels.html" 
           width="100%" 
           height="500" 
           style="border:none;">
