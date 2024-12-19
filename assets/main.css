@@ -381,6 +381,7 @@ html {
 
 /* Sidebar Styling */
 .sidebar {
+  height: 220px;
   width: 220px; /* Set the width of your sidebar */
   background-color: #e1e1e1; /* A light background for the sidebar */
   padding: 20px;
