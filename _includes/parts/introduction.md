@@ -194,6 +194,27 @@ We created a stacked area plot of the different groups. The intersection represe
 What's interesting is that most suspicious users show both types of behaviors at the same time. In fact, a large portion of users from both categories fall into this overlap. Specifically, 53.83% of suspicious users with type 1 behavior and 76.53% of type 2 users are flagged by both filters. This overlap really strengthens the idea that suspicious users are likely bots.
 
 ### Detecting Type-1 bots
+We were able to compute a Hard-SVM hyperplane to separate normal users and bots for after filtering with Filter Type-1. 
+<div style="text-align: center;" id="Figure1">
+<figure>
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/3D_hyperplane_density.html.html" 
+          width="100%" 
+          height="500" 
+          style="border:none;">
+  </iframe>
+  <center>
+  <figcaption>
+    <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+      <font size="2">Figure 1: 3D Plot of Average comments per user, and number of different videos commented</font>
+    </p>
+  </figcaption>
+  </center>
+</figure>
+</div>
+We clearly see that bots Type-1 comment on less different videos than normal users. They have a higher number of comments per user . This is computed by (total number of comments in a year)/(number of distinct videos commented that year). 
+
+
+
 
 ### Detecting Type-2 bots
 Now let's demonstrate the differences in the distribution between Type-2 bots and normal users.

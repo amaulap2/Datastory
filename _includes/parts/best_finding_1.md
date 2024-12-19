@@ -21,6 +21,24 @@ To answer this question, we first need to understand how bots are distributed ac
 </figure>
 </div>
 
+<!-- <div style="text-align: center;" id="Figure1">
+<figure>
+  <iframe src="{{ site.baseurl }}/assets/data/type-1_analysis/.html" 
+          width="100%" 
+          height="500" 
+          style="border:none;">
+  </iframe>
+  <center>
+  <figcaption>
+    <p style="margin-top:-0.6cm;margin-left:0.2cm;">
+      <font size="2">Figure 1: Proportion of Video Categories over time, Normal Users.</font>
+    </p>
+  </figcaption>
+  </center>
+</figure>
+</div> -->
+
+
 In <a href="#Figure1">Figure 1</a>, we first show the proportion of comments per category over time for normal users (i.e. users not considered as having suspicious activities). We observe the emergence and decrease in interest in some categories. The most obvious one is the great increase in interest in *Gaming* especially since 2010. This is followed by a decrease in interest in *Music* and *Entertainment* categories.
 
 <div style="text-align: center;" id="Figure2">
